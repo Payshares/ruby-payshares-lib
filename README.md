@@ -1,7 +1,6 @@
 # Ruby Payshares
 
 [![Build Status](https://travis-ci.org/payshares/ruby-payshares-lib.svg)](https://travis-ci.org/payshares/ruby-payshares-lib)
-[![Code Climate](https://codeclimate.com/github/payshares/ruby-payshares-lib/badges/gpa.svg)](https://codeclimate.com/github/payshares/ruby-payshares-lib)
 
 *STATUS:  this library is very early and incomplete.  The examples provided do not work, yet*
 
