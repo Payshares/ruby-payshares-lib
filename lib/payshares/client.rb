@@ -1,19 +1,19 @@
 require 'hyperclient'
 
-module Stellar
+module Payshares
   class Client
     include Contracts
 
     def self.default(options={})
       new options.merge({
-        horizon:   "https://horizon.stellar.org"
+        horizon:   "https://horizon.payshares.org"
       })
     end
 
     def self.default_testnet(options={})
       new options.merge({
-        horizon:   "https://horizon-testnet.stellar.org",
-        friendbot: "https://horizon-testnet.stellar.org",
+        horizon:   "https://horizon-testnet.payshares.org",
+        friendbot: "https://horizon-testnet.payshares.org",
       })
     end
 
@@ -46,23 +46,23 @@ module Stellar
       raise NotImplementedError
     end
 
-    # Contract Stellar::Account => Stellar::AccountInfo
-    Contract Stellar::Account => Any
+    # Contract Payshares::Account => Payshares::AccountInfo
+    Contract Payshares::Account => Any
     def account_info(account)
       address  = account.address
       @horizon.account(address:address)
     end
 
     Contract ({
-      from:     Stellar::Account, 
-      to:       Stellar::Account, 
-      amount:   Stellar::Amount
+      from:     Payshares::Account, 
+      to:       Payshares::Account, 
+      amount:   Payshares::Amount
     }) => Any
     def send_payment(options={})
       from     = options[:from]
       sequence = options[:sequence] || account_info(from).sequence
 
-      payment = Stellar::Transaction.payment({
+      payment = Payshares::Transaction.payment({
         account:     from.keypair,
         destination: options[:to].keypair,
         sequence:    sequence + 1,
@@ -75,7 +75,7 @@ module Stellar
     end
 
     Contract ({
-      account:  Maybe[Stellar::Account],
+      account:  Maybe[Payshares::Account],
       limit:    Maybe[Pos]
     }) => TransactionPage
     def transactions(options={})

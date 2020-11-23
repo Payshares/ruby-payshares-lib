@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem "xdr", git: "git@github.com:stellar/ruby-xdr.git"
+gem "xdr", git: "git@github.com:payshares/ruby-xdr.git"
 # gem "xdr", path: "../ruby-xdr"
 
-gem "stellar-base", git: "git@github.com:stellar/ruby-stellar-base.git"
-# gem "stellar-base", path: "../ruby-stellar-base"
+gem "payshares-base", git: "git@github.com:payshares/ruby-payshares-base.git"
+# gem "payshares-base", path: "../ruby-payshares-base"
 
 group :development do
   gem "pry"

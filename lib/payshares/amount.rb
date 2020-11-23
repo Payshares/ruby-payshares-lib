@@ -1,4 +1,4 @@
-module Stellar
+module Payshares
   class Amount
     include Contracts
 
@@ -6,7 +6,7 @@ module Stellar
     attr_reader :currency
 
     Contract Pos, Currency => Any
-    def initialize(amount, currency=Stellar::Currency.native())
+    def initialize(amount, currency=Payshares::Currency.native())
       # TODO: how are we going to handle decimal considerations?
       
       @amount   = amount
@@ -31,7 +31,7 @@ module Stellar
     end
 
     def inspect
-      "#<Stellar::Amount #{currency}(#{amount})>" 
+      "#<Payshares::Amount #{currency}(#{amount})>" 
     end
   end
 end

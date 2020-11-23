@@ -1,36 +1,36 @@
-require 'stellar'
+require 'payshares'
 
 # Reference an account from a secret seed
-account = Stellar::Account.from_seed("s3fu5vCMrfYouKuk2uB1gCD7EsuuBKY9M4qmnniQMBFMWR6Gaqm") 
+account = Payshares::Account.from_seed("s3fu5vCMrfYouKuk2uB1gCD7EsuuBKY9M4qmnniQMBFMWR6Gaqm") 
  
 # Further options
 # 
 # Make a random account
 # 
-#   account = Stellar::Account.random()
+#   account = Payshares::Account.random()
 #
 # Reference an account (unauthenticated) from an address
 # 
-#   account = Stellar::Account.from_address("gjgPNE2GpySt5iYZaFFo1svCJ4gbHwXxUy8DDqeYTDK6UzsPTs")
+#   account = Payshares::Account.from_address("gjgPNE2GpySt5iYZaFFo1svCJ4gbHwXxUy8DDqeYTDK6UzsPTs")
 #
 # Reference an account (unauthenticated) from a federation name
 # 
-#   account = Stellar::Account.lookup("nullstyle") # defaults to stellar.org
-#   account = Stellar::Account.lookup("nullstyle@stellar.org")
+#   account = Payshares::Account.lookup("nullstyle") # defaults to payshares.org
+#   account = Payshares::Account.lookup("nullstyle@payshares.org")
 # 
 
-# create a connection to the stellar network
-client = Stellar::Client.default_testnet()
+# create a connection to the payshares network
+client = Payshares::Client.default_testnet()
 
 # Further options
 # 
 # Connect to the live network (when it is created)
 # 
-#   client = Stellar::Client.default
+#   client = Payshares::Client.default
 # 
 # Connect to a specific horizon host
 # 
-#   client = Stellar::Client.new(host: "127.0.0.1")
+#   client = Payshares::Client.new(host: "127.0.0.1")
 
 # Get our friendly friendbot to
 # fund your new account

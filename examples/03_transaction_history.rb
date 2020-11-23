@@ -1,7 +1,7 @@
-require 'stellar'
+require 'payshares'
 
-account = Stellar::Account.from_seed("s3fu5vCMrfYouKuk2uB1gCD7EsuuBKY9M4qmnniQMBFMWR6Gaqm") 
-client  = Stellar::Client.default_testnet()
+account = Payshares::Account.from_seed("s3fu5vCMrfYouKuk2uB1gCD7EsuuBKY9M4qmnniQMBFMWR6Gaqm") 
+client  = Payshares::Client.default_testnet()
 
 # load the first page of transactions
 transactions = client.transactions({
@@ -10,7 +10,7 @@ transactions = client.transactions({
 }) # => #<TransactionPage count=50 [...]> 
 
 # TransactionPage implements Enumerable...
-transactions.first # => #<Stellar::Transaction ...>
+transactions.first # => #<Payshares::Transaction ...>
 transactions.each{|tx| p tx}
 transactions.take(3) # => [...]
 

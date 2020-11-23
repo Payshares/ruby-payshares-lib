@@ -1,7 +1,7 @@
-require 'stellar-base'
+require 'payshares-base'
 require 'contracts'
 
-module Stellar
+module Payshares
 
   autoload :Account
   autoload :AccountInfo

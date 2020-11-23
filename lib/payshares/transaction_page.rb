@@ -1,4 +1,4 @@
-module Stellar
+module Payshares
   class TransactionPage
     include Contracts
     include Enumerable

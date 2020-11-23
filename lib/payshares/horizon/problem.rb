@@ -1,4 +1,4 @@
-module Stellar
+module Payshares
   module Horizon
     class Problem 
       include Contracts

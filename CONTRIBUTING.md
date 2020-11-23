@@ -1,10 +1,10 @@
 # How to contribute
 
-Your contributions to the Stellar network will help improve the world’s financial
+Your contributions to the Payshares network will help improve the world’s financial
 infrastructure, faster.
 
 We want to make it as easy as possible to contribute changes that
-help the Stellar network grow and thrive. There are a few guidelines that we
+help the Payshares network grow and thrive. There are a few guidelines that we
 ask contributors to follow so that we can merge your changes quickly.
 
 ## Getting Started
@@ -24,7 +24,7 @@ ask contributors to follow so that we can merge your changes quickly.
 
 * <a href="https://docs.google.com/forms/d/1g7EF6PERciwn7zfmfke5Sir2n10yddGGSXyZsq98tVY/viewform?usp=send_form">Sign the Contributor License Agreement</a>
 * Push your changes to a topic branch in your fork of the repository.
-* Submit a pull request to the corresponding repository in the Stellar organization.
+* Submit a pull request to the corresponding repository in the Payshares organization.
  * Include a descriptive [commit message](https://github.com/erlang/otp/wiki/Writing-good-commit-messages).
  * Changes contributed via pull request should focus on a single issue at a time.
  * Rebase your local changes against the master branch. Resolve any conflicts that arise.
@@ -34,9 +34,9 @@ business days. We may suggest some changes or improvements or alternatives.
 
 # Additional Resources
 
-* [Bug tracker (Github)](https://github.com/stellar/ruby-stellar-lib/issues)
+* [Bug tracker (Github)](https://github.com/payshares/ruby-payshares-lib/issues)
 * <a href="https://docs.google.com/forms/d/1g7EF6PERciwn7zfmfke5Sir2n10yddGGSXyZsq98tVY/viewform?usp=send_form">Contributor License Agreement</a>
-* #stellar-dev IRC channel on freenode.org and Slack chat on stellar-public.slack.com
+* #payshares-dev IRC channel on freenode.org and Slack chat on payshares-public.slack.com
 
 
 This document is inspired by:
