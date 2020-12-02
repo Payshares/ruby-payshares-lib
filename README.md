@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.org/payshares/ruby-payshares-lib.svg)](https://travis-ci.org/payshares/ruby-payshares-lib)
 
-*STATUS:  this library is very early and incomplete.  The examples provided do not work, yet*
+*STATUS:  this library is very early and incomplete.  The examples provided do not work, yet.*
 
-This library helps you to integrate your application into the [Payshares network](http://payshares.org).
+This library helps you to integrate your application into the [Payshares Network](http://payshares.org).
 
 ## Installation
 
